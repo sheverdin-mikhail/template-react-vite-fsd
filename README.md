@@ -3,11 +3,12 @@
 
 # For create your project on this template:
 
-- install globally degit:
-```npm install -g degit```
+- install globally degit and use it for cloning as template :
+```bash 
+    npm install -g degit # install globally degit
+    degit https://github.com/sheverdin-mikhail/template-react-vite-fsd ./name-folder-to-clone # clone command
+```
 
-- use it for cloning as template:
-```degit https://github.com/sheverdin-mikhail/template-react-vite-fsd ./name-folder-to-clone```
 
 # For fastest creating of slice use:
 
