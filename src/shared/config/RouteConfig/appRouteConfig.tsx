@@ -1,3 +1,4 @@
+import { ExamplePage } from '@/pages/examplePage';
 import { RouteProps } from 'react-router-dom';
 
 export type AppRouteProps = RouteProps & {
@@ -8,12 +9,12 @@ export type AppRouteProps = RouteProps & {
 
 export enum AppRoutes {
   // MAIN = 'main',
-  // EXAMPLE = 'example',
+  EXAMPLE = 'example',
 }
 
 export const RoutePath: Record<AppRoutes, string> = {
-  // [AppRoutes.MAIN]: '/',
-  // [AppRoutes.EXAMPLE]: '/EXAMPLE/:exampleId/',
+  // [AppRoutes.MAIN]: '/main/:mainId',
+  [AppRoutes.EXAMPLE]: '/',
 
 
   // [AppRoutes.NOT_FOUND]: '/*',
@@ -27,11 +28,11 @@ export const routeConfig: Record<AppRoutes, AppRouteProps> = {
 
   // No Private pages
 
-   // [AppRoutes.EXAMPLE]: {
-  //   path: RoutePath.example,
-  //   element: <ExamplePage />,
-  //   authOnly: true,
-  // },
+   [AppRoutes.EXAMPLE]: {
+    path: RoutePath.example,
+    element: <ExamplePage />,
+    authOnly: true,
+  },
  
 
   // [AppRoutes.NOT_FOUND]: {
